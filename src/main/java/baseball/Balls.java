@@ -21,8 +21,17 @@ public class Balls {
     public BallStatus play(Ball user) {
         return computer.stream()
                 .map(answer -> answer.play(user))
-                .filter(BallStatus::isNotNoting) // 직접 접근하던 것을 메세지를 보낸다.
+                .filter(BallStatus::isNotNoting)
                 .findFirst()
                 .orElse(BallStatus.NOTHING);
+    }
+    public PlayResult play(List<Integer> balls) {
+        Balls userBalls = new Balls(balls);
+        PlayResult result = new PlayResult();
+        for(Ball answer : computer){
+            BallStatus status = userBalls.play(answer);
+            result.report(status);
+        }
+        return result;
     }
 }
