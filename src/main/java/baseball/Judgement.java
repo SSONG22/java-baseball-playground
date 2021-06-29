@@ -13,6 +13,6 @@ public class Judgement {
         return result;
     }
     public boolean hasPlace(List<Integer> computer, int placeIndex, int number){
-        return computer.get(placeIndex-1) == number;
+        return computer.get(placeIndex) == number;
     }
 }
