@@ -1,9 +1,7 @@
-package study;
+package stringCalculator;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import stringCalculator.OperationType;
-import stringCalculator.StringCalculator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;

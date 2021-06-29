@@ -1,7 +1,5 @@
 package stringCalculator;
 
-import java.sql.Struct;
-
 public class StringCalculator {
 
     public static int isParsable(String input) {
