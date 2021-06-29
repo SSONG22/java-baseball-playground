@@ -10,7 +10,10 @@ public class Application {
 //        System.out.println(numbers);
 
         Judgement judgement = new Judgement();
-        int count = judgement.correctCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
-        System.out.println(count);
+//        int count = judgement.correctCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
+//        System.out.println(count);
+
+        boolean hasPlace = judgement.hasPlace(Arrays.asList(1,2,3), 1,1);
+        System.out.println(hasPlace);
     }
 }
